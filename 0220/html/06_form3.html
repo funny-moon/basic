@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        게시판: <br>
+        <textarea cols="30" rows="10"></textarea>
+    </form>
+
+    <select>
+        <option value="car">자동차선택</option>
+        <option value="kia">KIA</option>
+        <option value="hyundai">HYUNDAI</option>
+        <option value="samsung">SAMSUNG</option>
+        <option value="bmw">BMW</option>
+        <option value="bentz">BENTZ</option>
+    </select>
+
+    <form action="">
+        <fieldset>
+            <legend>주문자 상세설명</legend>
+            제품 : <input type="text" value="쌀 10킬로" readonly> <br>
+            이름 : <input type="text" autofocus required> <br>
+            이메일 : <input type="email"> <br>
+            URL : <input type="url"> <br>
+            전화번호 : <input type="tel" required> <br>
+            검색 : <input type="text" placeholder="힌트문자"> <br>
+            파일추가 : <input type="file" accept="image/jpg"> <br>
+                      <label for="male">남성</label>
+                      
+            <input type="radio" name="gender" id="male" checked>
+            <label for="female">여성</label>
+            <input type="radio" name="gender" id="female"> <br>
+            <!-- label for 와 input의 id가 같아야한다 -->
+            <input type="submit">
+            
+        </fieldset>
+    </form>
+</body>
+</html>
