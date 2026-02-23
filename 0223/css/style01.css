@@ -1,0 +1,62 @@
+/* 스타일시트 순서 */
+/* 외부 => 내부 => 인라인
+
+    인라인 권장 X
+
+    대부분 외부 스타일 시트 사용한다
+
+*/
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@font-face {
+    font-family: 'Mulmaru';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Mulmaru.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* layout */
+#header {
+    width: 600px;
+    height: 200px;
+    background-color: yellow;
+}
+#section {
+    width: 600px;
+    height: 400px;
+    background-color: aqua;
+}
+#footer {
+    width: 600px;
+    height: 150px;
+    background-color: pink;
+}
+
+/* header */
+#header>h1 {
+    color: red;
+    font-family: 'Mulmaru';
+}
+#header .nav {
+    width: 600px;
+    height: 100px;
+    background-color: red;
+}
+#header .nav h1 {
+    font-family: "Nanum Pen Script", cursive;
+    color: #fff;
+}
+
+/* section */
+#section h3 {color: green;}
+#section p { }
+
+/* footer */
+#footer p {}
+#footer p strong {
+    font-weight: normal;
+}
+#footer p em {
+    font-weight: bold;
+    font-style: normal;
+}
