@@ -1,0 +1,137 @@
+/* resest */
+* { margin: 0; padding: 0;}
+li {list-style: none;}
+a { text-decoration: none;}
+body {  font-family: "Nanum Gothic", sans-serif;}
+
+/* layout */
+#header {
+    width: 960px;
+    height: 160px;
+    background: pink;
+    margin: 0 auto;
+    /* 중앙정렬 */
+
+    position: relative;
+    /* 절대좌표의 기준점 */
+}
+#main {
+    width: 960px;
+    background:gray;
+    margin: 0 auto;
+
+}
+#footer {
+    width: 960px;
+    height: 100px;
+    background: skyblue;
+    margin: 0 auto;
+
+}
+
+/* header */
+#title {
+    position: absolute;
+    top: 34px;
+    left: 30px;
+}
+#title h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 40px;
+    color: #850000;
+    line-height: 1;
+}
+#title h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 35px;
+    color: #070068;
+    line-height:1;
+}
+
+nav#lnb {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+nav#lnb ul {
+    display: flex;
+}
+nav#lnb ul li {}
+nav#lnb ul li:first-child a {
+    border-radius: 10px 0 0 10px;
+}
+nav#lnb ul li:last-child a {
+    border-radius: 0px 10px 10px 0;
+}
+nav#lnb ul li a {
+    display: block;
+    padding: 5px 8px;
+    font-size: 14px;
+    color: #000;
+    background-color: yellow;
+    border: 1px solid #000;
+}
+nav#lnb ul li a:hover {
+    color: yellow;
+    background-color: #000;
+}
+
+
+/* width / height 메뉴 */
+/* nav#gnb {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+nav#gnb ul {
+    display: flex;
+}
+nav#gnb ul li {
+    text-align: center;
+    line-height: 30px;
+}
+nav#gnb ul li a {
+    display: block;
+    width: 100px; height: 30px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: red;
+}
+nav#gnb ul li:first-child a {
+    border-radius: 10px 0 0 10px;
+}
+nav#gnb ul li:last-child a {
+    border-radius: 0 10px 10px 0;
+}
+nav#gnb ul li a:hover {
+    color: #000;
+    background-color: blue;
+} */
+
+ /* padding 메뉴 */
+nav#gnb {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+nav#gnb ul {
+    display: flex;
+}
+nav#gnb ul li {}
+nav#gnb ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #850000;
+    border: 1px solid #000;
+}
+nav#gnb ul li:first-child a {
+    border-radius: 10px 0 0 10px;
+}
+nav#gnb ul li:last-child a {
+    border-radius: 0 10px 10px 0;
+}
+nav#gnb ul li a:hover {
+    color: red;
+    background-color: black;
+}

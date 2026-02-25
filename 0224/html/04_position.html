@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        * {margin: 0;padding: 0;}
+        div { width: 100px; height: 100px; font-size: 30px;}
+        #box01 { background: yellow;position: absolute; left: 20px; top: 20px;}
+        #box02 { background: blue;  position: absolute; left: 40px; top: 40px; z-index: 100;}
+        #box03 { background: orange; position: absolute; left:60px; top: 60px;z-index:-1;}
+        #box04 { background: green; position: absolute; left: 80px; top: 80px; z-index:200 ;}
+        #content { width: 300px; height: 3000px; background-color: pink;}
+        #top { width: 100px; height: 100px;background-color: #000; color: #fff; 
+            border-radius: 50%; display: flex; justify-content: center; align-items: center;
+            position: fixed;
+            right: 100px;
+            bottom:100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box01">1</div>
+    <div id="box02">2</div>
+    <div id="box03">3</div>
+    <div id="box04">4</div>
+    <!-- 
+        position
+        1) static
+        2) absolute
+        3) relative
+        4) fixed
+    -->
+    <div id="content"></div>
+    <div id="top">TOP</div>
+</body>
+</html>
