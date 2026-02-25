@@ -1,0 +1,223 @@
+/* resest */
+* { margin: 0; padding: 0;}
+li {list-style: none;}
+a { text-decoration: none;}
+body {  font-family: "Nanum Gothic", sans-serif;}
+
+/* layout */
+#header {
+    width: 960px;
+    height: 160px;
+    background: pink;
+    margin: 0 auto;
+    /* 중앙정렬 */
+
+    position: relative;
+    /* 절대좌표의 기준점 */
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+#main {
+    width: 960px;
+    background:gray;
+    margin: 0 auto;
+
+}
+#footer {
+    width: 960px;
+    height: 100px;
+    background: skyblue;
+    margin: 0 auto;
+
+}
+
+/* header */
+#title {
+    padding-top: 30px;
+}
+#title h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 40px;
+    color: #850000;
+    line-height: 1;
+}
+#title h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 35px;
+    color: #070068;
+    line-height:1;
+}
+
+.nav_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+nav#lnb {
+    margin-bottom: 60px;
+}
+nav#lnb ul {
+    display: flex;
+}
+nav#lnb ul li {}
+nav#lnb ul li:first-child a {
+    border-radius: 10px 0 0 10px;
+}
+nav#lnb ul li:last-child a {
+    border-radius: 0px 10px 10px 0;
+}
+nav#lnb ul li a {
+    display: block;
+    padding: 5px 8px;
+    font-size: 14px;
+    color: #000;
+    background-color: yellow;
+    border: 1px solid #000;
+}
+nav#lnb ul li a:hover {
+    color: yellow;
+    background-color: #000;
+}
+
+
+ /* padding 메뉴 */
+nav#gnb {
+
+}
+nav#gnb ul {
+    display: flex;
+}
+nav#gnb ul li {}
+nav#gnb ul li a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #850000;
+    border: 1px solid #000;
+}
+nav#gnb ul li:first-child a {
+    border-radius: 10px 0 0 10px;
+}
+nav#gnb ul li:last-child a {
+    border-radius: 0 10px 10px 0;
+}
+nav#gnb ul li a:hover {
+    color: red;
+    background-color: black;
+}
+
+
+/* main */
+#main {
+    display: flex;
+    gap: 2%;
+}
+#section01 {
+    flex: 1;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+#aside {
+    width: 25%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.article { 
+    padding: 20px;
+}
+.article h2 {
+    width: 144px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    border-bottom: 2px dotted #000;
+    padding-bottom: 5px;
+}
+.article p {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -1px;
+}
+
+/* aside */
+/* 탭 선택 */
+
+/* first tab */
+input:nth-of-type(1) { display: none;}
+/* input 태그를 보이지 않게 만든다 */
+
+input:nth-of-type(1) ~ div:nth-of-type(1) { display: none;}
+/* input 태그가 체크되어 있지 않을 경우 뒤에 위치한 div중 첫번째 div태그가 보이지 않는다*/
+
+input:nth-of-type(1):checked ~ div:nth-of-type(1) { display: block;}
+
+/* second tab */
+input:nth-of-type(2) { display: none;}
+input:nth-of-type(2) ~ div:nth-of-type(2) { display: none;}
+input:nth-of-type(2):checked ~ div:nth-of-type(2) { display: block;}
+
+/* 탭 모양 만들기 */
+.button {
+    display: flex;
+}
+.button label {
+    display: block;
+    width: 50%;
+    height: 40px;
+    /* text-align: center;
+    line-height: 60px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.button label.first {
+    background-color: black;
+    color: yellow;
+}
+.button label.second {
+    background-color: black;
+    color: yellow;
+}
+
+input:nth-of-type(1):checked ~ section label.first {
+    background-color: yellow;
+    color: #000;
+}
+input:nth-of-type(2):checked ~ section label.second {
+    background-color: yellow;
+    color: #000;
+}
+
+/* 탭 아이템 */
+.tab_item ul li {
+    border: 1px solid #000;
+    padding: 10px;
+}
+.tab_item ul li a {
+    display: flex;
+    color: #000;
+}
+.tab_item ul li a .thumnail {
+    margin-right: 10px;
+}
+.tab_item ul li a .description {}
+.tab_item ul li a .description strong {
+    display: block;
+    width: 157px;
+
+    /* 한줄 글자 생략 삼총사 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tab_item ul li a .description em {
+    font-style: normal;
+}

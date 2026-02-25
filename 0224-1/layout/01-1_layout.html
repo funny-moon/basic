@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout01 - float</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        #wrap { width: 900px; margin: 0 auto;}
+        #header { width: 900px; height: 80px; background-color: #ee7e7e; margin-bottom: 10px;}
+        #nav {width: 300px; height: 500px; background-color: #ff4b4b; float: left; /*margin-right: 10px; margin-bottom: 10px;*/ margin: 0 10px 10px 0;}
+        #content { width: 590px; height: 500px; background-color: #fd2727;float: left; }
+        #footer { width: 900px; height: 80px; background-color: #8d0000; clear: both;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">header</header>
+        <nav id="nav">nav</nav>
+        <section id="content">content</section>
+        <footer id="footer">footer</footer>
+    </div>
+</body>
+</html>
