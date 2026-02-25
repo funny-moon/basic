@@ -1,0 +1,112 @@
+/* reset */
+* { margin: 0; padding: 0; box-sizing: border-box;}
+li { list-style: none;}
+a { text-decoration: none;}
+
+/* header */
+#header {
+    width: 760px;
+    height: 160px;
+    margin: 0 auto;
+    border: 1px solid #be2600;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#logo {
+    width: 160px;
+    height: 140px;
+    background-color: rgb(117, 255, 244);
+}
+#nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+#nav .lnb{
+    width: 320px; height: 30px;
+    background-color: rgb(206, 7, 90);
+}
+#nav .gnb{
+    width: 570px; height: 50px;
+    background-color: blue;
+    padding: 10px;
+}
+#nav .gnb ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav .gnb ul li {
+    margin-right: 10px;
+}
+#nav .gnb ul li:last-child {
+    margin-right: 0;
+}
+#nav .gnb ul li a {
+    display: block;
+    width: 130px; height: 30px;
+    color: #000;
+    background-color: #999999;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+#nav .gnb ul li a:hover {
+    background-color: yellow;
+    color: green;
+}
+
+/* main */
+#main {
+    width: 760px;
+    border: 1px solid #be2600 ;
+    margin: 0 auto;
+    padding: 10px;
+}
+#section01 {
+    width: 740px; height: 250px;
+    border: 1px solid #0022b8;
+    background-image: url(https://placehold.co/740x250);
+}
+#section02 {
+    width: 740px;
+    display: flex;
+    margin-top: 10px;
+}
+#section02 .box1-1 {
+    width: 490px;
+    height: 160px;
+    border: 1px solid #0022b8;
+    margin-right: 10px;
+    background-image: url(https://placehold.co/230x140);
+    background-repeat: no-repeat;
+}
+#section02 .box1-2 {
+    width: 240px;
+    height: 160px;
+    border: 1px solid #0022b8;
+}
+
+#section03 {
+    width: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.box3-1,.box3-2,.box3-3 {
+    width: 240px;
+    height: 160px;
+    border: 1px solid #0022b8;
+    margin-right: 10px;
+}
+.box3-3 {
+    margin-right: 0;
+}
+
+
+#section04 {}
+
+
+
+#footer {}
